@@ -1,7 +1,7 @@
 dustc-commonjs
 ==================
 
-Transforms a compiled Dust template to a CommonJS module
+Transforms a compiled Dust template into a CommonJS module.
 
 # Installation
 
