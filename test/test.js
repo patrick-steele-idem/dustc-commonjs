@@ -23,9 +23,8 @@ describe('dustc-commonjs' , function() {
             if (err) {
                 return done(err);
             }
-            expect(src).to.equal('(function(){module.exports=body_0;function body_0(chk,ctx){return chk.write("Hello ").reference(ctx.get(["name"], false),ctx,"h").write("!");}return body_0;})();');
+            expect(src).to.equal('var dust = require(\'dustjs-linkedin\');(function(dust){module.exports=body_0;function body_0(chk,ctx){return chk.w("Hello ").f(ctx.get(["name"], false),ctx,"h").w("!");}body_0.__dustBody=!0;return body_0;})(dust);');
             done();
         });
     });
 });
-
